@@ -15,22 +15,6 @@ class ForValidations {
                 .replace("(^\\s|\\s$)".toRegex(), "") //Eliminando los iniciales y finales
         }
 
-        fun valOnlyText(text:String):Boolean{
-            val regOnlyString = Regex("^[a-zA-Záéíóú ñ]+$")
-            customMessage = "This field only contains letters"
-            return regOnlyString.containsMatchIn(text)
-        }
-
-        fun valOnlyPhone(text:String):Boolean{
-            customMessage = "The phone can only have 9 numbers"
-            return valNumber(text, 9)
-        }
-
-        fun valOnlyRuc(text:String):Boolean{
-            customMessage = "The ruc can only have 13 numbers"
-            return valNumber(text, 13)
-        }
-
         fun valOnlyPassword(text:String):Boolean{
             val regOnlyPassword = Regex("^[\\w.#]{8,}$")
             customMessage = "Password must be at least 8 characters."
