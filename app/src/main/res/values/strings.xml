@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">evc4_sebastianrod</string>
+
+    <string name="splashcreen_title">EVALUACIÓN CONTINUA 4</string>
+    <string name="splashcreen_author">Sebastián Rodríguez Ventura</string>
+
+    <string name="login_title">Sign in</string>
+    <string name="login_link_register_phrase">Don\'t have an account yet?</string>
+    <string name="login_link_register">Create an account</string>
+
+    <string name="register_title">Sign Up</string>
+    <string name="register_link_register_phrase">Already have an account?</string>
+    <string name="register_link_register">Sign in</string>
+
+    <string name="products_list_tite">Products</string>
+    <string name="products_search_button">Search</string>
+    <string name="product_void">There is no product with this code</string>
+
+    <string name="product_register_title">Register Product</string>
+    <string name="product_register_description">Description</string>
+    <string name="product_register_brand">Brand</string>
+    <string name="product_register_purchase_price">Purchase price</string>
+    <string name="product_register_sale_price">Sale price</string>
+    <string name="product_register_stock">Stock</string>
+    <string name="product_register_image">Image</string>
+    <string name="product_register_open_gallery">Open Gallery</string>
+
+    <string name="register_save">Register</string>
+    <string name="register_cancel">Cancel</string>
+
+    <string name="product_item_brand">Brand:</string>
+    <string name="product_item_purchase_price">Purchase\nprice:</string>
+    <string name="product_item_sale_price">Sale\nprice:</string>
+    <string name="product_item_stock">Stock:</string>
+
+    <string name="auth_email">Email</string>
+    <string name="auth_password">Password</string>
+
+
+</resources>

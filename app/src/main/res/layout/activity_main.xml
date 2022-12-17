@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?colorOnPrimary"
+    android:orientation="vertical"
+    android:paddingHorizontal="5dp"
+    android:paddingVertical="20dp"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/prendas_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:paddingHorizontal="10dp">
+
+        <ImageView
+            android:id="@+id/logout_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_logout"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_semibold"
+            android:text="@string/products_list_tite"
+            android:textColor="?colorSecondary"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textSize="28sp"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/product_register_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_add"
+            android:background="@drawable/shape_button_image"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="5dp"
+        android:orientation="horizontal"
+        android:layout_height="40dp">
+        <EditText
+            android:id="@+id/product_search_code"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.65"
+            android:layout_marginRight="10dp"
+            android:textColor="?colorSecondary"
+            android:paddingHorizontal="7dp"
+            android:paddingVertical="2dp"
+            android:textSize="15sp"
+            android:lines="1"
+            android:hint="XXXX"
+            android:inputType="text"
+            android:fontFamily="@font/inter_medium"
+            android:background="@drawable/shape_input"
+            android:drawableLeft="@drawable/ic_search"
+            />
+        <Button
+            android:id="@+id/product_search_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.35"
+            app:backgroundTint="@null"
+            android:background="@drawable/shape_button"
+            android:text="@string/products_search_button"
+            android:letterSpacing="0"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/inter_bold"
+            />
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/product_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        tools:listitem="@layout/item_product"/>
+
+        <TextView
+            android:id="@+id/product_void_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_semibold"
+            android:text="@string/product_void"
+            android:textColor="?colorSecondary"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            tools:ignore="MissingConstraints" />
+    <ImageView
+        android:id="@+id/product_reload"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_reload"/>
+
+
+
+
+    <!--    Template for text view-->
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:fontFamily="@font/inter_semibold"-->
+    <!--        android:text="Template"-->
+    <!--        android:textColor="?colorSecondary"-->
+    <!--        android:textSize="28sp"/>-->
+
+    <!--    Template for input-->
+    <!--    <EditText-->
+    <!--        android:id="@+id/exe01_input_codigo"-->
+    <!--        android:layout_width="120dp"-->
+    <!--        android:layout_height="30dp"-->
+    <!--        android:textColor="?colorSecondary"-->
+    <!--        android:paddingHorizontal="7dp"-->
+    <!--        android:paddingVertical="2dp"-->
+    <!--        android:textSize="15sp"-->
+    <!--        android:lines="1"-->
+    <!--        android:inputType="text"-->
+    <!--        android:fontFamily="@font/inter_medium"-->
+    <!--        android:background="@drawable/shape_input"-->
+    <!--        />-->
+
+    <!--    Template for button-->
+    <!--    <Button-->
+    <!--        android:layout_width="150dp"-->
+    <!--        android:layout_height="45dp"-->
+    <!--        app:backgroundTint="@null"-->
+    <!--        android:background="@drawable/shape_button"-->
+    <!--        android:text="Template"-->
+    <!--        android:textSize="17sp"-->
+    <!--        android:textAllCaps="false"-->
+    <!--        android:fontFamily="@font/inter_bold"-->
+
+    <!--        />-->
+
+    <!--    Template for button outline-->
+    <!--    <Button-->
+    <!--        android:layout_width="150dp"-->
+    <!--        android:layout_height="45dp"-->
+    <!--        app:backgroundTint="@null"-->
+    <!--        android:background="@drawable/shape_button_outline"-->
+    <!--        android:text="Template"-->
+    <!--        android:textAllCaps="false"-->
+    <!--        android:textSize="17sp"-->
+    <!--        android:textColor="?colorPrimary"-->
+    <!--        android:fontFamily="@font/inter_bold"-->
+    <!--        android:lineSpacingExtra="1dp"-->
+    <!--        />-->
+
+</LinearLayout>

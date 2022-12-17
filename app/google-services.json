@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "359716076753",
+    "project_id": "evc4sebastianrod",
+    "storage_bucket": "evc4sebastianrod.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:359716076753:android:20ba1d2cc3195998a499f0",
+        "android_client_info": {
+          "package_name": "com.sebastianrod.evc4_sebastianrod"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "359716076753-skb46mumi0j0oequ1hh8gg6uhhn4ih2l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sebastianrod.evc4_sebastianrod",
+            "certificate_hash": "20fb88587b49e1e153b6e5610b34d35e1fe9746b"
+          }
+        },
+        {
+          "client_id": "359716076753-jbdrvtdcoq8as6t8i4k5ugqgqp0fd5s3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQHsQ8hb889Gc1IGlq3Yg_wgI_SIgNraE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "359716076753-jbdrvtdcoq8as6t8i4k5ugqgqp0fd5s3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
